@@ -45,7 +45,6 @@ class Adminppc extends BaseController
     //........................................................
     public function index()
     {
-
         // echo (password_hash("peradaban165", PASSWORD_DEFAULT));
         // die;
 
