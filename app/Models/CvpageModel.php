@@ -11,12 +11,14 @@ class CvpageModel extends Model
 
     public function addcount($ipaddress1Ipaddress2Browser, $idpage)
     {
-        $data = [
-            'deteksi' => $ipaddress1Ipaddress2Browser,
-            'date' => date('d-m-Y'),
-            'idartikel' => $idpage
-        ];
+        if (!$this->where('deteksi', $ipaddress1Ipaddress2Browser)->where('idartikel', $idpage)->countAllResults()) {
+            $data = [
+                'deteksi' => $ipaddress1Ipaddress2Browser,
+                'date' => date('d-m-Y'),
+                'idartikel' => $idpage
+            ];
 
-        $this->save($data);
+            $this->save($data);
+        };
     }
 }
