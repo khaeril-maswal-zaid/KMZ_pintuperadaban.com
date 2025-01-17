@@ -104,7 +104,7 @@ class Category extends BaseController
             'image'         => URL . "assets/img/web/pp.png",
             'time'          => 1652850000
         ];
-        // dd($data['artikelcategoryBig']);
+        // dd($data['endors']);
 
         return view('artikel/artikelcategory',  $data);
     }

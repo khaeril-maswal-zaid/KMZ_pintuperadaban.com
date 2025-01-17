@@ -30,5 +30,5 @@ function takeusers()
     else                                                        $browser = 'Other';
 
 
-    return $ipaddress1 .'*|*'. $ipaddress2 .'*|*'. $browser;
+    return $ipaddress1 . '*|*' . $ipaddress2 . '*|*' . $browser;
 }

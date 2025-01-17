@@ -112,6 +112,7 @@ class ArtikelTunggal extends BaseController
             $rowviewers[] = $this->cvpagemodel->select('deteksi')->where('idartikel', $this->artikel['id'])->findAll()[$i]['deteksi'];
         }
 
+        //Update ulang
         $this->artikelmodel->save([
             'id'            => $this->artikel['id'],
             'visit'         =>  $visit2, //$visit1, //(ambil di databese visit atau ambil di database artikel) *****

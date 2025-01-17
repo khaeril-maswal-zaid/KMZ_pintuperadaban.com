@@ -75,11 +75,9 @@
                 <div class="row">
 
 
-                    <!-- Iklan Area Start -->
+                    <!-- Iklan Area Start Banner TOP -->
                     <div class="col-lg-12 mb-3">
-                        <?= $endors[1]['hrefsourcelef'] .  $endors[1]['wa'] . $endors[1]['sourcechat'] . $endors[1]['chat'] . $endors[1]['hrefsourceright'] . $endors[1]['imgsourceleft'] . $endors[1]['idbrand'] . $endors[1]['imgsourceright'] ?>
-                        <!-- <a href=""><img class="img-fluid w-100" src="#" alt=""></a> -->
-                        <amp-auto-ads type="adsense" data-ad-client="ca-pub-3151537190694448"></amp-auto-ads>
+                        <img src="/assets/img/advertisement/banner-728-90.png" class="w-100" alt="Iklan Banner" />
                     </div>
                     <!-- Iklan Area End -->
 
@@ -113,7 +111,7 @@
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <small class="ml-3"><i class="far fa-eye mr-2"></i><?= $big['visit'] ?></small>
-                                    <!--<small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>-->
+                                        <!--<small class="ml-3"><i class="far fa-comment mr-2"></i>123</small>-->
                                     </div>
                                 </div>
                             </div>

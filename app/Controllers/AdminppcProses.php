@@ -118,8 +118,6 @@ class AdminppcProses extends BaseController
                 'view'          => '1' //supaya tidak eror saat di tampilan pertama
             ]);
 
-            dd('ok');
-
             session()->setFlashdata('alert', 'Artikel Berhasil Dipublikasikan');
 
             return redirect()->to(URL . 'adminppc/artikel/' . $this->request->getVar('kategori'));
