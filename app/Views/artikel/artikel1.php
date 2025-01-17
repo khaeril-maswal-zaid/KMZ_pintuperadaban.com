@@ -87,8 +87,8 @@
                 </div>
                 <!-- Iklan Area End -->
 
-                <!-- Comment Form Start -->
-                <div class="mb-3">
+                <!-- Comment Form Start Di Tutup karena belum ada Dtb nya -->
+                <!-- <div class="mb-3">
                     <div class="section-title mb-0">
                         <h4 class="m-0 text-uppercase font-weight-bold">Leave a comment</h4>
                     </div>
@@ -117,7 +117,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
                 <!-- Comment Form End -->
 
                 <hr>
