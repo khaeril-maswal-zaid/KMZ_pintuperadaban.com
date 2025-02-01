@@ -68,9 +68,10 @@
                     <div class="dropdown-menu rounded-0 m-0">
                         <a href="/category/teologi" class="dropdown-item">Teologi</a>
                         <a href="/category/filsafat" class="dropdown-item">Filsafat</a>
+                        <a href="/category/politik" class="dropdown-item">Politik</a>
+                        <a href="/category/pendidikan" class="dropdown-item">Pendidikan</a>
                         <a href="/category/sosial" class="dropdown-item">Sosial</a>
                         <a href="/category/ekonomi" class="dropdown-item">Ekonomi</a>
-                        <a href="/category/politik" class="dropdown-item">Politik</a>
                         <a href="/category/bisnis" class="dropdown-item">Bisnis</a>
                     </div>
                 </div>
