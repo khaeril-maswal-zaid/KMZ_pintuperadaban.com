@@ -32,7 +32,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
-    <link href="/assets/img/web/pp.png" rel="icon">
+    <link href="<?= base_url("/assets/img/web/pp.png") ?>" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
