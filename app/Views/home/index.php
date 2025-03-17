@@ -341,7 +341,7 @@
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="/category/<?= strtolower($artkelKtg[2]['kategori']) ?>"><?= $artkelKtg[2]['kategori'] ?></a>
                                     <?= KelenderIna($artkelKtg[2]['tanggal']) ?></small>
                                 </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="<?= $artkelKtg[2]['slug'] ?>/<?= $artkelKtg[2]['time'] ?>"><?= $artkelKtg[2]['judul'] ?></a>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="<?= $artkelKtg[2]['slug'] ?>/<?= $artkelKtg[2]['time'] ?>"><?= substr($artkelKtg[2]['judul'], 0, 30) ?>...</a>
                             </div>
                         </div>
                     </div>
