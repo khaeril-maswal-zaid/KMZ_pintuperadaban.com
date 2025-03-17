@@ -297,7 +297,7 @@
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="/category/<?= strtolower($artkelKtg[0]['kategori']) ?>"><?= $artkelKtg[0]['kategori'] ?></a>
                                     <small><?= KelenderIna($artkelKtg[0]['tanggal']) ?></small>
                                 </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="/<?= $artkelKtg[0]['slug'] ?>/<?= $artkelKtg[0]['time'] ?>"><?= $artkelKtg[0]['judul'] ?></a>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="/<?= $artkelKtg[0]['slug'] ?>/<?= $artkelKtg[0]['time'] ?>"><?= substr($artkelKtg[0]['judul'], 0, 40) ?>...</a>
                             </div>
                         </div>
 
@@ -311,7 +311,7 @@
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="/category/<?= strtolower($artkelKtg[1]['kategori']) ?>"><?= $artkelKtg[1]['kategori'] ?></a>
                                     <small><?= KelenderIna($artkelKtg[1]['tanggal']) ?></small>
                                 </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="<?= $artkelKtg[1]['slug'] ?>/<?= $artkelKtg[1]['time'] ?>"><?= $artkelKtg[1]['judul'] ?></a>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="<?= $artkelKtg[1]['slug'] ?>/<?= $artkelKtg[1]['time'] ?>"><?= substr($artkelKtg[1]['judul'], 0, 40) ?>...</a>
                             </div>
                         </div>
                     </div>
@@ -325,9 +325,9 @@
                             <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                 <div class="mb-2">
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="/category/<?= url_title($artkelKtg[7]['kategori'], '-', true) ?>"><?= $artkelKtg[7]['kategori'] ?></a>
-                                    <small><?= KelenderIna($artkelKtg[7]['tanggal']) ?></small> f
+                                    <small><?= KelenderIna($artkelKtg[7]['tanggal']) ?></small>
                                 </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="/<?= $artkelKtg[7]['slug'] ?>/<?= $artkelKtg[7]['time'] ?>"><?= $artkelKtg[7]['judul'] ?></a>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="/<?= $artkelKtg[7]['slug'] ?>/<?= $artkelKtg[7]['time'] ?>"><?= substr($artkelKtg[7]['judul'], 0, 40) ?>...</a>
                             </div>
                         </div>
 
@@ -341,7 +341,7 @@
                                     <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="/category/<?= strtolower($artkelKtg[2]['kategori']) ?>"><?= $artkelKtg[2]['kategori'] ?></a>
                                     <?= KelenderIna($artkelKtg[2]['tanggal']) ?></small>
                                 </div>
-                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="<?= $artkelKtg[2]['slug'] ?>/<?= $artkelKtg[2]['time'] ?>"><?= substr($artkelKtg[2]['judul'], 0, 30) ?>...</a>
+                                <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="<?= $artkelKtg[2]['slug'] ?>/<?= $artkelKtg[2]['time'] ?>"><?= substr($artkelKtg[2]['judul'], 0, 40) ?>...</a>
                             </div>
                         </div>
                     </div>
