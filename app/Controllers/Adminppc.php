@@ -102,8 +102,40 @@ class Adminppc extends BaseController
             'kategori' => $this->kategorimodel->findAll()
         ];
 
+
         return view('admin/artikel/index', $data);
     }
+
+    public function edit($slug, $time)
+    {
+        $artikelmodel = new ArtikelModel;
+        $artikel = $artikelmodel->like('slug', $slug)->first();
+
+        //Jika penulusuran tidak ada lempar ke home
+        if ($artikel == null) {
+            return redirect()->to(base_url('adminppc'));
+        }
+
+        //Jika slug atau time tidak lengkap maka reload ulang dengan slug dan time yg lengkap
+        if ($artikel['slug'] != $slug || $artikel['time'] != $time) {
+            return redirect()->to(base_url('adminppc/edit/' . $artikel['slug'] . '/' . $artikel['time']));
+        }
+
+        $data = [
+            'title' => "Admin | " . $this->adminlogin['nama'],
+            'templatelayout' =>  $this->templatelayout,
+            'classbody' =>  $this->classbody,
+
+            'adminlogin' => $this->adminlogin,
+            'artikel' => $artikel,
+
+            //Untuk Kategori di SIDEBAR ADMIN
+            'kategori' => $this->kategorimodel->findAll()
+        ];
+
+        return view('admin/artikel/edit', $data);
+    }
+
 
     public function kategori()
     {

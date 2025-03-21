@@ -109,7 +109,7 @@ class AdminppcProses extends BaseController
                 'srcimg'        =>  $this->request->getVar('source'),
                 'picture'       =>  $this->request->getVar('fotopost'),
                 'oleh'          =>  $penulis,
-                'kategori'      =>  $this->request->getVar('kategori'),
+                'kategori'      =>  url_title($this->request->getVar('kategori'), '-', false),
                 'level'         =>  $this->request->getVar('level'),
 
                 'artikel'       =>  $this->request->getVar('artikel'),
@@ -120,6 +120,20 @@ class AdminppcProses extends BaseController
 
             session()->setFlashdata('alert', 'Artikel Berhasil Dipublikasikan');
 
+            return redirect()->to(URL . 'adminppc/artikel/' . $this->request->getVar('kategori'));
+        }
+    }
+
+    public function editArtikel()
+    {
+        if ($this->request->getVar('csrf_test_name')) {
+            $this->artikelmodel->update($this->request->getVar('id'), [
+                'judul'         =>  $this->request->getVar('judul'),
+                'description'   =>  $this->request->getVar('description'),
+                'artikel'       =>  $this->request->getVar('artikel'),
+            ]);
+
+            session()->setFlashdata('alert', 'Artikel Berhasil Diedit');
             return redirect()->to(URL . 'adminppc/artikel/' . $this->request->getVar('kategori'));
         }
     }

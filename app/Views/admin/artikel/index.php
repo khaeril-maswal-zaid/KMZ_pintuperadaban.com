@@ -100,17 +100,17 @@
                         <td class="text-center">
                             <div class="btn-group" role="group">
                                 <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Action
+                                    Action
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                  <li><a href="/<?= $art['slug'] ?>/<?= $art['time'] ?>" class="dropdown-item" target="_blank">View</a></li>
-                                  <li><a href="#" class="dropdown-item">Hapus</a></li>
-                                  <li><a href="/adminppc/edit/<?= $art['slug'] ?>/<?= $art['time'] ?>" class="dropdown-item">Edit</a></li>
-                                  <li><a href="https://api.whatsapp.com/send?phone=6285343652494/&amp;text=*<?= $art['judul'] ?>*%0A%0Ahttps://pintuperadaban.com/<?= $art['slug'] ?>/<?= $art['time'] ?>%0A%0A*Pintu Peradaban .Com*%0A_Menebar%20kebaikan%20dan%20manfaat%20melalui%20mimbar%20informasi,%20literasi%20universal,%20autentik,%20serta berkemajuan._" class="dropdown-item" target="_blank">Share WA</a></li>
-                                  <li class="dropdown-item">
-                                      <a href="/adminppc/shareemail/<?= $art['slug'] ?>/<?= $art['time'] ?>">Share Email</a> | 
-                                      <a href="/adminppc/shareemail/sendedto/<?= $art['slug'] ?>/<?= $art['time'] ?>">165</a>
-                                  </li>
+                                    <li><a href="/<?= $art['slug'] ?>/<?= $art['time'] ?>" class="dropdown-item" target="_blank">View</a></li>
+                                    <li><a href="#" class="dropdown-item">Hapus</a></li>
+                                    <li><a href="/adminppc/edit/<?= $art['slug'] ?>/<?= $art['time'] ?>" class="dropdown-item">Edit</a></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=6285343652494/&amp;text=*<?= $art['judul'] ?>*%0A%0Ahttps://pintuperadaban.com/<?= $art['slug'] ?>/<?= $art['time'] ?>%0A%0A*Pintu Peradaban .Com*%0A_Menebar%20kebaikan%20dan%20manfaat%20melalui%20mimbar%20informasi,%20literasi%20universal,%20autentik,%20serta berkemajuan._" class="dropdown-item" target="_blank">Share WA</a></li>
+                                    <li class="dropdown-item">
+                                        <a href="/adminppc/shareemail/<?= $art['slug'] ?>/<?= $art['time'] ?>">Share Email</a> |
+                                        <a href="/adminppc/shareemail/sendedto/<?= $art['slug'] ?>/<?= $art['time'] ?>">165</a>
+                                    </li>
                                 </ul>
                             </div>
                         </td>
@@ -161,8 +161,11 @@
                                     Isikan dengan benar !
                                 </div>
                             </div>
-                            <div class="input-group has-validation mt-2">
-                                <input autocomplete="off" placeholder="Description artikel" type="text" class="form-control" aria-describedby="inputGroupPrepend" required name="description">
+
+                            <div class="form-floating has-validation">
+                                <textarea class="form-control mt-2" placeholder="Leave a comment here" id="floatingTextarea" name="description" style="height: 80px;"></textarea>
+                                <label for="floatingTextarea">Description Artikel</label>
+
                                 <div class="invalid-feedback">
                                     Isikan dengan benar !
                                 </div>

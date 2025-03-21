@@ -53,7 +53,7 @@
                 </div>
             </form>
 
-            <span class="text-white">admin1@pintuperadaban.com&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;peradaban165</span>
+            <span class="text-white">official@pintuperadaban.com&nbsp;||&nbsp;peradaban165</span>
         </div>
     </div>
 </div>

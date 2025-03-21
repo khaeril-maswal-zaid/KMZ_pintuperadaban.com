@@ -17,7 +17,8 @@ $routes->get('/', 'Home::index');
 //AbouT Artikel----------------------------------------------------------------------
 $routes->get('/adminppc', 'Adminppc');
 $routes->get('/adminppc/artikel/(:any)', 'Adminppc::artikel/$1');
-$routes->get('/adminppc/artikel/(:any)/(:any)/(:any)', 'Adminppc::artikel/$1/$2/$3');
+$routes->get('/adminppc/edit/(:any)', 'Adminppc::edit/$1/$2');
+// $routes->get('/adminppc/artikel/(:any)/(:any)/(:any)', 'Adminppc::artikel/$1/$2/$3');
 $routes->get('/adminppc/kategori', 'Adminppc::kategori');
 $routes->get('/adminppc/endors', 'Adminppc::Endors');
 $routes->get('/adminppc/endors', 'Adminppc::Endors');
@@ -28,6 +29,7 @@ $routes->post('/adminppc/queriajaxeditendors', 'AdminppcProses::queriajaxeditend
 $routes->post('/adminppc/proseslogin', 'AdminppcProses::proseslogin');
 //Add artikel
 $routes->post('/adminppcproses/tambahartikel', 'AdminppcProses::tambahArtikel');
+$routes->post('/adminppcproses/editartikel', 'AdminppcProses::editArtikel');
 //Add KATEGORI
 $routes->post('/adminppcproses/addkategori', 'AdminppcProses::addkategori');
 $routes->get('/adminppcproses/deletekategori/(:any)/(:any)', 'AdminppcProses::deletekategori/$1/$2');
@@ -43,7 +45,7 @@ $routes->get('/adminppc/shareemail/(:any)/(:any)', 'ShareEmail::index/$1/$2');
 
 
 // Post Foto menggunakan Ajax
-$routes->post('/postfotoajaxl/(:any)/(:any)', function ($title, $location) {
+$routes->post('/postfotoajaxl/(:any)/(:any)', function (string $title, string $location) {
     $test = explode('.', $_FILES["file"]["name"]);
     $ext = end($test);
     $name = url_title($title, '-', true) . '.' . $ext;
